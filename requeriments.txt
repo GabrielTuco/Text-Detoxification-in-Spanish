@@ -15,4 +15,6 @@ gdown
 tweet-preprocessor
 tensorboardX
 gensim
-
+language_tool_python
+emoji
+fuzzywuzzy

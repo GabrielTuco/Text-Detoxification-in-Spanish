@@ -3,4 +3,4 @@
 .idea
 __pycache__
 env
-detox/models
+models
