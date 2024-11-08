@@ -3,7 +3,7 @@ numpy==1.23.5
 pandas
 torch
 nltk
-transformers==4.24
+transformers==4.21
 fairseq==0.10.0
 sentencepiece
 keras_preprocessing

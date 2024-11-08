@@ -5,4 +5,5 @@ __pycache__
 env
 models
 data/processed/
-data/raw/
+data/raw/*
+data/test/*

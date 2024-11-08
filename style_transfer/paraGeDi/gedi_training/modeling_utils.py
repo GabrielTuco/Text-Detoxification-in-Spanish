@@ -22,7 +22,7 @@ from transformers.file_utils import (
     hf_bucket_url,
     is_remote_url,
 )
-
+from huggingface_hub import hf_hub_download
 
 logger = logging.getLogger(__name__)
 
@@ -424,8 +424,9 @@ class PreTrainedModel(nn.Module, ModuleUtilsMixin):
                 )
                 archive_file = pretrained_model_name_or_path + ".index"
             else:
-                archive_file = hf_bucket_url(
-                    pretrained_model_name_or_path, postfix=(TF2_WEIGHTS_NAME if from_tf else WEIGHTS_NAME),
+                archive_file = hf_hub_download(
+                    repo_id=pretrained_model_name_or_path, 
+                    filename="pytorch_model.bin"  # Cambia a "tf_model.h5" si usas TensorFlow
                 )
 
             # redirect to the cache, if necessary

@@ -11,5 +11,9 @@ gdown --id 1rBSrbL_6gfDqOCpNz1JrOJK9gKrkKxhv -O models/cola/checkpoint_best.pt
 # download the similarity model from http://style.cs.umass.edu/
 gdown https://drive.google.com/drive/folders/1lBN2nbzxtpqbPUyeURtzt0k1kBY6u6Mj -O models/sim --folder
 
-# DOWNLOAD THE MODELS FOR INFERENCE
+# DOWNLOAD THE DATASETS
+mkdir -p data/raw
+gdown https://drive.google.com/drive/folders/1cZ3oss-rNPYbnfAkcG_BL8CrivTwBUnz -O data/raw --folder
+
+
 
